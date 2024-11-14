@@ -1,0 +1,5 @@
+n=int(input())
+pages_per_kg=1000
+pages_per_notebook=100
+nb=(n*pages_per_kg)//pages_per_notebook
+print(nb)
