@@ -1,0 +1,6 @@
+n=input()
+total_sum=sum(int(digit) for digit in n)
+if total_sum%2==0:
+    print("Vignesh")
+else:
+    print("Charan")
