@@ -1,0 +1,5 @@
+charan_cage=25
+vignesh_cage=10
+x=int(input())
+vignesh_age=vignesh_cage-(charan_cage-x)
+print(vignesh_age)
