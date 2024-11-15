@@ -1,0 +1,3 @@
+x,n=map(int,input().split())
+new_planes=(n-1)//100-x+1
+print(max(0,new_planes))
