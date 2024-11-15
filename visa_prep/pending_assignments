@@ -1,0 +1,7 @@
+X,Y,Z=map(int,input().split())
+total_minutes=X*Y
+total_days=total_minutes/(24*60)
+if total_days<=Z:
+    print("YES")
+else:
+    print("NO")
