@@ -1,0 +1,8 @@
+n=int(input())
+matrix=[]
+for i in range(n):
+    row=list(map(int,input().split()))
+    matrix.append(row)
+mirror=[row[::-1] for row in matrix]
+for row in mirror:
+    print(*row)
