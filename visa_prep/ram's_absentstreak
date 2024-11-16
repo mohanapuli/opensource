@@ -1,0 +1,11 @@
+n=int(input())
+arr=list(map(int,input().split()))
+current_absent=0
+max_absent=0
+for day in arr:
+    if day==0:
+        current_absent+=1
+        max_absent=max(max_absent,current_absent)
+    else:
+        current_absent=0
+print(max_absent)
