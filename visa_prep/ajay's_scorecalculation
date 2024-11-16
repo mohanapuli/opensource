@@ -1,0 +1,5 @@
+T=int(input())
+for i in range(T):
+    x,n=map(int,input().split())
+    points=x//10
+    print(points*n)
