@@ -1,0 +1,7 @@
+import re
+msg=input()
+p1=re.compile(r'^(\+\d{2} )?\d{10}$')
+if p1.match(msg) and sum(map(int, re.findall('\d',msg)))>0:
+    print("Correct")
+else:
+    print("Incorrect")
