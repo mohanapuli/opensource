@@ -1,0 +1,16 @@
+def calculate_row_col_sums(matrix):
+    n=len(matrix)
+    row_sums=[sum(row) for row in matrix]
+    col_sums=[sum(matrix[i][j] for i in range(n)) for j in range(n)]
+    result=[]
+    for i in range(n):
+        total=row_sums[i]+col_sums[i]
+        result.append(total)
+    return result
+n=int(input())
+matrix=[]
+for _ in range(n):
+    row=list(map(int,input().split()))
+    matrix.append(row)
+result=calculate_row_col_sums(matrix)
+print(*result)
